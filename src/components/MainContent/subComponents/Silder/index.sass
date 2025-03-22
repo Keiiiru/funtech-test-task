@@ -1,0 +1,75 @@
+.slider
+  display: flex
+  flex-direction: column
+
+  align-items: center
+  justify-content: center
+
+  height: fit-content
+  width: 100%
+  
+  background-color: hsla(0, 0%, 95%, 1)
+  text-wrap: nowrap
+
+  padding: 20px 0 60px 0 
+
+
+  &__header
+    font-size: 32px
+    line-height: 36px
+    letter-spacing: 0px
+    color: hsla(0, 0%, 77%, 1)
+
+  &__navigation
+    margin-top: 50px
+    box-shadow: 0px 32.34px 25.87px -19.4px #0F0F0F1F
+
+
+  &__button-prev, &__button-next
+    background-color: #fff
+    border: none
+    height: 50px
+    width: 60px
+
+  &__button-prev
+    position: relative
+    border-top-left-radius: 13px
+    border-bottom-left-radius: 13px
+
+    &::after
+      content: ""
+
+      width: 2px
+      height: 30px
+
+      position: absolute
+      top: 10px
+      right: 0
+
+      background-color: #E6E8EC
+
+  &__button-next
+    border-top-right-radius: 13px
+    border-bottom-right-radius: 13px
+  
+.swiper 
+  overflow: hidden
+  position: relative
+  width: 100%
+  padding: 0 20px
+
+  &-wrapper 
+    display: flex
+    align-items: flex-end
+    transition-timing-function: ease-out
+  
+
+  &-slide 
+    height: 100%
+    display: flex
+    justify-content: center
+    flex-shrink: 0
+    
+
+    
+  

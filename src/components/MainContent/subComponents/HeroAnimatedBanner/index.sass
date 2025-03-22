@@ -1,0 +1,102 @@
+.hero-animated-banner
+  margin-top: 150px
+  height: 600px
+  position: relative
+  overflow: hidden
+  width: 100% 
+
+
+
+
+  &__first-image
+    position: absolute
+    top: 35px
+    right: 40% 
+    width: 50vmin
+    height: 50vmin
+    border-radius: 14px
+    box-shadow: 0px 30px 43px -47px rgba(34, 60, 80, 0.69)
+    transition: all 0.3s 
+
+  &__second-image
+    position: absolute
+    top: 25%
+    right: -15%
+    z-index: 2
+    width: 50vmin
+    height: 50vmin
+    border-radius: 14px
+    box-shadow: 0px 30px 43px -47px rgba(34, 60, 80, 0.69)
+    transition: all 0.3s
+
+  &__dots-icon
+    position: absolute
+    top: 5%
+    right: -15%
+    z-index: 1
+    width: 40vmin
+    max-width: 320px
+
+  &__arrow-icon
+    position: absolute
+    top: 12%
+    right: 15%
+    width: 15vmin
+    transition: all 0.3s
+
+
+@media (min-width: 600px) and (max-width: 1024px)
+  .hero-animated-banner
+    margin: 0
+    height: 500px  
+    
+    &__first-image
+      right: 15vmin   
+      top: 0% 
+      width: 30vmin  
+      height: 30vmin
+
+    &__second-image
+      right: -17vmin     
+      top: 14vmin
+      width: 30vmin  
+      height: 30vmin
+      z-index: 3    
+
+    &__dots-icon
+      top: -10%
+      right: -15vmin
+      width: 30vmin
+
+    &__arrow-icon
+      right: -3vmin
+      width: 25vmin
+      top: 5%
+
+@media (min-width: 1025px)
+  .hero-animated-banner
+    margin: 0
+    height: 700px  
+    
+    &__first-image
+      right: 20vmin   
+      top: 0% 
+      width: 20vmin  
+      height: 20vmin
+
+    &__second-image
+      right: -2vmin     
+      top: 14vmin
+      width: 20vmin  
+      height: 15vmin
+      z-index: 3    
+
+    &__dots-icon
+      top: -5%
+      right: -3vmin
+      width: 10vmin
+
+    &__arrow-icon
+      right: 0vmin
+      width: 25vmin
+      top: 5vmin

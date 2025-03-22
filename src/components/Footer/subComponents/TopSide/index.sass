@@ -1,0 +1,33 @@
+.top-side
+  display: flex
+  flex-direction: row
+
+  align-items: center
+  justify-content: space-between
+
+  margin-top: 20px
+
+  padding: 15px 20px
+
+  &__logo
+    display: flex
+    flex-direction: row
+
+    align-items: center
+
+  &__social-media
+    display: flex
+    flex-direction: row
+
+    align-items: center
+    gap: 10px
+
+@media (min-width: 600px)
+  .top-side
+
+    margin: 0
+    font-size: 21px
+    font-weight: 600
+
+    &__social-media
+      display: none
